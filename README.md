@@ -2,7 +2,7 @@
 
 一个可运行的研究原型：KV 前缀缓存被淘汰后，保留压缩的稀疏选择记录；重复 prefill 时，分块预取并提前解压选择索引，让当前计算与后续准备重叠。
 
-**A small research prototype for compressed selection replay with bounded CUDA buffers.** It implements storage and prefetch/decode, not a model-serving integration or a demonstrated end-to-end model speedup.
+**A small research prototype for compressed selection replay with bounded CUDA buffers.** Storage, prefetch/decode and head/tail splitting are tested. Experimental serving adapters are included, but native model replay and end-to-end speedup remain unverified.
 
 ## 做了什么
 
@@ -127,8 +127,10 @@ ID 范围为 `0..65535`；65535 是合法 ID，不作为 sentinel。拒绝浮点
 
 ## 边界
 
-这不是 SGLang/vLLM 的插件；没有 prefix lookup/淘汰策略、生产请求调度或模型质量验证。它提供可接入消费者的选择记录通路，以及能复查正确性的演示和测试。
+`integrations/` 包含实验性的 vLLM DSA 和 SGLang SALA 适配脚本，以及已执行的 Qwen3-4B dense 质量基线。原生稀疏模型重放尚未通过：DSA 遇到后端依赖不兼容，SALA 遇到设备 CUDA 故障。它们不是生产插件，也没有实现 prefix lookup/淘汰和生产请求调度。详见[框架执行结果](benchmarks/framework_results.md)与[接入说明](integrations/README.md)。
 
 缓存文件仅面向本程序写出的可信记录。写入和内存存储构造时会验证编码内容，磁盘读取检查包长度与 SHA-256；校验和用于发现损坏，不提供来源认证，也不使任意第三方缓存文件可信。
 
 压缩减少保存或传输字节，不自动减少请求延迟。GPU 解码可能与主计算争用资源，SSD/DRAM 带宽不足也会造成等待。应在相同缓冲、预取和计时策略下比较 raw 与压缩路径，再测真实模型的端到端收益。
+
+新增研究方向：[利用已知选集预排 KV 连续槽位](benchmarks/kv_layout_design.md)，让 attention 更规整地从 HBM 分 tile 搬入 shared memory，并考虑与 HiSparse 换入过程融合。当前只有设计，尚未实现或测得布局收益。

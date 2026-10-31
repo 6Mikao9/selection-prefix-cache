@@ -1,0 +1,58 @@
+{
+  "model": "Qwen/Qwen3-4B",
+  "framework": "vllm 0.30.0",
+  "attention": "dense full attention, FLASH_ATTN backend",
+  "purpose": "Pretrained-model task/framework control; no sparse selector or replay benefit measured",
+  "protocol": {
+    "temperature": 0,
+    "seed": 0,
+    "tensor_parallel_size": 1,
+    "dtype": "bfloat16",
+    "prefix_caching": false,
+    "enforce_eager": true,
+    "enable_chunked_prefill": true,
+    "max_num_batched_tokens": 4096,
+    "gpu_memory_utilization": 0.6,
+    "flashinfer_sampler": false,
+    "sampler_note": "Installed FlashInfer sampler failed architecture detection; official VLLM_USE_FLASHINFER_SAMPLER=0 selects existing native sampler",
+    "timing_note": "Per-row generation_seconds covers whole generation including prefill; NOT TTFT; cold/JIT effects uncontrolled; no timing comparison claimed"
+  },
+  "completed_runs": [
+    {
+      "file": "qwen3_longbench4_raw32.jsonl",
+      "chat_policy": "none; original official task prompt",
+      "max_new_tokens": 32,
+      "samples_per_task": 4,
+      "metrics_0_to_1": {"passage_retrieval_en": 0.8333333333333334, "2wikimqa": 0.025},
+      "note": "All eight outputs reached the token cap; answer continuations/repetitions limit interpretation"
+    },
+    {
+      "file": "qwen3_longbench4_chat_nothink32.jsonl",
+      "chat_policy": "native tokenizer user chat; add_generation_prompt=True; enable_thinking=False",
+      "max_new_tokens": 32,
+      "samples_per_task": 4,
+      "metrics_0_to_1": {"passage_retrieval_en": 0.75, "2wikimqa": 0.25},
+      "note": "Same task bodies and metric; protocol variant with +12 wrapper tokens; concise answers used 2-8 generated tokens"
+    },
+    {
+      "file": "qwen3_ruler16k4_raw128.jsonl",
+      "chat_policy": "none; official base template input+answer_prefix",
+      "max_new_tokens": 128,
+      "samples_per_task": 4,
+      "metrics_0_to_1": {"niah_single_1": 1.0, "niah_multikey_2": 1.0},
+      "actual_input_tokens_range": [15731, 16254],
+      "note": "Unmodified pinned official RULER generator, seed42. All outputs reached token cap after giving correct number; official string_match_all is substring recall and does not penalize extra text"
+    }
+  ],
+  "incomplete_run": {
+    "name": "RULER native-chat nonthinking variant",
+    "completed_rows": 5,
+    "status": "excluded from complete-run scores",
+    "failure": "CUDA unspecified launch failure on sixth row; subsequent nvidia-smi could not obtain device handle. No GPU reset or driver changes attempted. Partial predictions and original log retained outside repository"
+  },
+  "limitations": [
+    "Tiny first-four-row subsets, not full benchmark scores or statistical evidence",
+    "Different native templates create different model inputs; raw and chat policies are separate protocols",
+    "No full vocabulary logits comparison, selection replay, cache capacity saving or TTFT speedup is demonstrated by these dense control runs"
+  ]
+}
