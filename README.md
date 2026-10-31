@@ -4,6 +4,12 @@
 
 **A small research prototype for compressed selection replay with bounded CUDA buffers.** Storage, prefetch/decode and head/tail splitting are tested. Native MiniCPM-SALA replay has passed limited SGLang checks; the separate CPU-zlib adapter has not demonstrated end-to-end speedup.
 
+后续 [selector 诊断](benchmarks/selector_diagnostic_results.md) 在 SALA 16K/24K 测得 GPU 驻留索引复用约降低 1.69%/1.84% 的单 token 请求耗时，CPU 预解码后搬运约降低 1.42%/1.57%。它保留完整展开索引、未接入有界压缩流水线；不能当作最终方案的显存或速度收益。[DSA 原生后端检查](benchmarks/dsa_backend_status.md) 另列，尚无 DSA 性能结果。
+
+当前聚焦重复 **prefill**，目标是小缓存保留稳定收益。[QSA 原生内核微基准](benchmarks/qsa_selector_results.md) 比较了展开索引与紧凑块 ID 的字节数/耗时；[prefill Graph 检查](benchmarks/graph_prefill_status.md) 单独记录真实执行证据，decode Graph 不算本阶段收益。
+
+[Prefill 六组实测](benchmarks/prefill_graph_results.md) 已验证 eager/真实 breakable graph 下的原生、GPU 索引复用、CPU 预解码搬运。16K SALA 的 model-forward CUDA 区间降低约 1.4%–1.6%；Graph 本身没有明显改善。所有查询/索引严格检查通过，完整展开索引仍是诊断控制，尚非小缓存部署方案。
+
 ## 做了什么
 
 - 每个 chunk 保存二维逻辑块 ID（每行固定 k），支持 `raw_u16` 和共享字典 + 逐行位图；自动模式在位图膨胀时退回 raw。

@@ -1,0 +1,144 @@
+{
+  "status": "not_benchmarked",
+  "versions": {
+    "sglang": {
+      "sglang": "0.5.20"
+    },
+    "torch": {
+      "torch": "2.13.0"
+    },
+    "deep_gemm": {
+      "sgl-deep-gemm": "0.2.0"
+    }
+  },
+  "sources": [
+    {
+      "package": "sglang",
+      "relative_source": "srt/layers/attention/dsa/dsa_indexer.py",
+      "present": true,
+      "sha256": "2f9634d275bde01c6eaffa0fabc339d592d2de67fa397b2e97af673f78ffbbfc",
+      "evidence": [
+        {
+          "line": 194,
+          "text": "if _is_hip:"
+        },
+        {
+          "line": 196,
+          "text": "elif _is_xpu:"
+        },
+        {
+          "line": 359,
+          "text": "if _is_hip:"
+        },
+        {
+          "line": 761,
+          "text": "if _is_hip:"
+        },
+        {
+          "line": 770,
+          "text": "elif _is_xpu:"
+        },
+        {
+          "line": 920,
+          "text": "elif _is_xpu:"
+        },
+        {
+          "line": 1047,
+          "text": "if _is_hip:"
+        },
+        {
+          "line": 1071,
+          "text": "if _is_hip:"
+        },
+        {
+          "line": 1151,
+          "text": "if _is_hip:"
+        },
+        {
+          "line": 1168,
+          "text": "elif _is_xpu:"
+        },
+        {
+          "line": 1181,
+          "text": "logits = deep_gemm.fp8_mqa_logits("
+        },
+        {
+          "line": 1219,
+          "text": "if _is_hip:"
+        },
+        {
+          "line": 1233,
+          "text": "elif _is_xpu:"
+        },
+        {
+          "line": 1246,
+          "text": "logits_chunk = deep_gemm.fp8_mqa_logits("
+        },
+        {
+          "line": 1478,
+          "text": "if _is_hip:"
+        }
+      ]
+    },
+    {
+      "package": "deep_gemm",
+      "relative_source": "include/deep_gemm/impls/sm90_fp8_mqa_logits.cuh",
+      "present": true,
+      "sha256": "d04c888c33951179e211c472e9bf575cd47efa9ee6a0d39423decff2e108f6d3",
+      "evidence": [
+        {
+          "line": 6,
+          "text": "#include <cute/arch/cluster_sm90.hpp>"
+        },
+        {
+          "line": 8,
+          "text": "#include <cute/arch/mma_sm90_desc.hpp>"
+        }
+      ]
+    },
+    {
+      "package": "deep_gemm",
+      "relative_source": "include/deep_gemm/impls/sm100_mqa_logits.cuh",
+      "present": true,
+      "sha256": "32ae3bf2234cf0f28ece3c3ccbafecf0f51ee61bc38c9a279ceeadec3aa67383",
+      "evidence": [
+        {
+          "line": 5,
+          "text": "#include <cute/arch/cluster_sm90.hpp>"
+        }
+      ]
+    },
+    {
+      "package": "deep_gemm",
+      "relative_source": "include/deep_gemm/impls/sm120_fp8_mqa_logits.cuh",
+      "present": true,
+      "sha256": "acdfa3c2ed98bd8c1731b7107d90ca9a668b9ea5e04cbd7c34035284b7a36140",
+      "evidence": [
+        {
+          "line": 9,
+          "text": "#include <cute/arch/cluster_sm90.hpp>"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No model or kernel benchmark is performed.",
+    "CUDA DSA ragged scoring requires native DeepGEMM FP8 MQA logits; no torch-score substitute.",
+    "Capability >= 9 is necessary; SM120 support depends on the installed native backend.",
+    "This preflight does not establish GPU availability or reserve a card."
+  ],
+  "distributions": {
+    "sglang": {
+      "sglang": "0.5.20"
+    },
+    "torch": {
+      "torch": "2.13.0"
+    },
+    "deep_gemm": {
+      "sgl-deep-gemm": "0.2.0"
+    }
+  },
+  "device_gate": {
+    "checked": false
+  }
+}

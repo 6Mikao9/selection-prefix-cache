@@ -1,0 +1,2811 @@
+[
+  {
+    "run_id": "e7813b5b0d04485badf21d7fba2c49db",
+    "mode": "baseline",
+    "phase": "warmup",
+    "wall_seconds": 4.069300251081586,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "cda201e2423842ec84afecec1ae312a0",
+    "mode": "baseline",
+    "phase": "strict",
+    "wall_seconds": 5.900988354347646,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "c5423b12f97f4cefba22c9f376b660c3",
+    "mode": "capture",
+    "phase": "capture",
+    "wall_seconds": 8.957916244398803,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "a6eefd3bf69e426290a7ec2d3d7a916c",
+    "mode": "gpu",
+    "phase": "strict",
+    "wall_seconds": 5.741416166070849,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "95fe80f7bfb746888b9ba53e166f3a65",
+    "mode": "pinned",
+    "phase": "strict",
+    "wall_seconds": 5.730966642033309,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "d5302c4372b040fa8a96594987a89d85",
+    "mode": "baseline",
+    "phase": "warmup",
+    "wall_seconds": 2.8992234487086535,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "98093d36c37b48c7a6fb80a7e897e14a",
+    "mode": "gpu",
+    "phase": "warmup",
+    "wall_seconds": 2.8531023138202727,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "a65e2566e6f745eea6c91c99a278270a",
+    "mode": "pinned",
+    "phase": "warmup",
+    "wall_seconds": 2.8579540881328285,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "e93e016fe6e5468184e9faca686f650a",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 2.8534252331592143,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "b68e108116cf45d9b8e6a967e8005551",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 2.8648875607177615,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "325b0e78b1d04bbc8e1d5c09bd2bc0c9",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 2.8650236460380256,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "4fbaf8310ce847d891307651da6fded6",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 2.8595028636045754,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "5bd540911dd94a27a42d9cfaa3660398",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 2.9159123031422496,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "e2aaaa97d6ae42f584e0b623ac00a0da",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 2.8627466401085258,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "0984a54f58584830a23d9fb085e9d5b3",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 2.9158103903755546,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "109f8c8c51d24401a45cf933a914ae98",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 2.917550547979772,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "648d0c472e1540a3a31dd7a60c5e2aca",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 2.918738953769207,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "9fb7fe87d72646d49a11d92973ff2513",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 2.917223792988807,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "29bf3cfff6024455b8521262beeb0181",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 2.8696971219033003,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "47866f78fec5448f8bf97ae344339a33",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 2.8640916710719466,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "1357b8a868404f3fa3947b9d048db27f",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 2.864013276062906,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "b2c6cd83444f42e2b27a8255b6b9d6c0",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 2.871699810028076,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "4d85d148108448a080a86742f8fb3b3a",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 2.8753145900554955,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "0bd53c4f85c644978ad562eb128a89f8",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 2.867726181168109,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "0aa57f052bea45db9a8de39bc1a1f39e",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 2.8690048679709435,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "07354b2f07b7470c9a15bab2279e22a1",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 2.8766396488063037,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "2279003141a949e384dbd0e590c6a646",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 2.9215599978342652,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "f08d561e50734cd2875f1475f8f8cdfe",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 2.920465972740203,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "e915860c5e09404cba51a262b7b7bb78",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 2.87311327829957,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "56d138a5765f4b37abea3d87210f7585",
+    "mode": "gpu",
+    "phase": "strict",
+    "wall_seconds": 5.756708944682032,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "e17b7ef0d0574a409ac72d4c8a8e6e18",
+    "mode": "pinned",
+    "phase": "strict",
+    "wall_seconds": 5.745844463817775,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "8a49909a81084ebdb0411173e12f01ff",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 2.9047042299062014,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "305212b938dc49ea861c0c7f2882b07f",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 2.855750311166048,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "2b4c3df7af7f42a6bcea44758276ed01",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 2.862057391088456,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "ec0f4d1c26764bc895cd6e0e2a19857a",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 2.914144348818809,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "8bd3902f75504aeb9796527f45d42364",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 2.8640000941231847,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "e53f498a5587475dab2420d4062578e8",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 2.872825981117785,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "fe456b6c7ab9417f9372165ece2a281d",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 2.9210402057506144,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "07cb7591df964a038c172779498a36ae",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 2.865670213010162,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "011410ae9e5e49fc9078014be37f77f0",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 2.8733039810322225,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "4f4306461b374551a9dc737762a74d8f",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 2.929127053823322,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "7e61639b77894e95be823de60dac4172",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 2.8666936377994716,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "4548ba3f815547ce94dc9cb5b26df037",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 2.871494467370212,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "8655f0044cc94629b62decc5e2cc221c",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 2.9227089853957295,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "f9bf1fb0e07149d9b3580fc96eca757f",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 2.868343090172857,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "0074ccda0df94bb1982555a4473b2c11",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 2.874219839926809,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "4bcaae0b2afb4d859138a204252c7662",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 2.9214863628149033,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "bd7ccb2b7761404e8071f7fc53a2c8fc",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 2.867560343351215,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "1ffc3b522da5489f8523d7c409efbd3b",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 2.8723254352808,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "68c740b3b1bd425ebbd9426626616f2b",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 2.924060453660786,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "1b844b93653c4d4d80317bbea9f720e5",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 2.8690435332246125,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "4d7b311830b74500a0ca87edb2fd4474",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 2.875068861991167,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "3c04efc05b8f4640a749a65511563e03",
+    "mode": "baseline",
+    "phase": "drain",
+    "wall_seconds": 2.9266626690514386,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " facts",
+      "output_ids": [
+        19143
+      ],
+      "prompt_tokens": 24576,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -2.396077979938127E-05,
+          19143,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -2.396077979938127E-05,
+            19143,
+            null
+          ],
+          [
+            -12.00002384185791,
+            3525,
+            null
+          ],
+          [
+            -12.31252384185791,
+            2354,
+            null
+          ],
+          [
+            -12.50002384185791,
+            59320,
+            null
+          ],
+          [
+            -12.87502384185791,
+            73440,
+            null
+          ]
+        ]
+      ]
+    }
+  }
+]

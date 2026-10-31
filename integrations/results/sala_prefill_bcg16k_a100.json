@@ -1,0 +1,2618 @@
+{
+  "shape_adapter": "restore eager 2D attention contract",
+  "execution": "breakable",
+  "branch": "native",
+  "status": "native_prefill_graph_verified",
+  "requested_graph_config": {
+    "decode": {
+      "backend": "disabled"
+    },
+    "prefill": {
+      "backend": "breakable",
+      "bs": [
+        16384
+      ],
+      "max_bs": 16384
+    }
+  },
+  "prompt_sha256": "36b4cfb2bda904bafdccef3efccb5d56786c21b11e89c07ee51b1f1d91cb9d98",
+  "limitation": "Separate profile records current-stream model forward GPU timeline including launch gaps, not pure kernel sum; walltime is offline first-token request, not server TTFT.",
+  "rows": [
+    {
+      "run_id": "03f85efc24b24574b26a33d33f5c5d3b",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9929564576596022,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "03f85efc24b24574b26a33d33f5c5d3b",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "00fd6641453b49c48f3332b405b367fb",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.8961582207120955,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "00fd6641453b49c48f3332b405b367fb",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "afb3f94c6d754a69b0a43a277fbcdf95",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.8968365332111716,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "afb3f94c6d754a69b0a43a277fbcdf95",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "42bcf2d6ba68410993ec811ba7e2a768",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.8998837280087173,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "42bcf2d6ba68410993ec811ba7e2a768",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "b1178ccd6d5a49a0afd1591810915166",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.899895892944187,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "b1178ccd6d5a49a0afd1591810915166",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "38ba9a7f11e64e05999ca6bbac839ba3",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.901945676188916,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "38ba9a7f11e64e05999ca6bbac839ba3",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "51b80d1ed54740b4ba8ff70af6138b75",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9059446253813803,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "51b80d1ed54740b4ba8ff70af6138b75",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "cef3c2c9ded74aa9afa3c3227edb6f49",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9064647518098354,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "cef3c2c9ded74aa9afa3c3227edb6f49",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "5c0d4e638c574d0bb21fe4e24b3aff49",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9064462268725038,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "5c0d4e638c574d0bb21fe4e24b3aff49",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "32fe30fb540741b1a7a630b4c0f29ca6",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9075269009917974,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "32fe30fb540741b1a7a630b4c0f29ca6",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "6e6f091fd61044eca42c7b7a821e7d50",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.910192312207073,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "6e6f091fd61044eca42c7b7a821e7d50",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "ea2e48bf9b004782b093bad18a5f62f0",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.90903480630368,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "ea2e48bf9b004782b093bad18a5f62f0",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "529c163f7f2b49c8b2a45afab07ed770",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9074116400443017,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "529c163f7f2b49c8b2a45afab07ed770",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "657a098811b34584b4ba2461b2035688",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9100079271011055,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "657a098811b34584b4ba2461b2035688",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "00eae668e708424ea61952d60769d3e8",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.908964485861361,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "00eae668e708424ea61952d60769d3e8",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "217a7cbc796c407dad88fc0472702171",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.909914513118565,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "217a7cbc796c407dad88fc0472702171",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "c348fff23ab2435d9a5c78396ad46d3c",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9090897161513567,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "c348fff23ab2435d9a5c78396ad46d3c",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "b36fe5933d8847d4bd8a9810c2a811b9",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9100365182384849,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "b36fe5933d8847d4bd8a9810c2a811b9",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "618ecc30bffd4f33947d1afc6dbe4289",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9158963891677558,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "618ecc30bffd4f33947d1afc6dbe4289",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "31a59b88c9ed4eada931f024930a1683",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9113460779190063,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "31a59b88c9ed4eada931f024930a1683",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "364a02a35d23472d8a153c5f399d653a",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.915449561085552,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "364a02a35d23472d8a153c5f399d653a",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "361923f84a574eefaa1b7e1e7b7b8e80",
+      "phase": "drain",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9120313571766019,
+      "actual_prefill_replays": 1,
+      "replay_evidence": [
+        {
+          "run_id": "361923f84a574eefaa1b7e1e7b7b8e80",
+          "kind": "actual_prefill_graph_replay",
+          "runner_class": "PrefillCudaGraphRunner",
+          "method": "execute -> backend.replay",
+          "backend": "breakable",
+          "shape_adapter": "restore eager 2D attention contract",
+          "resolved_graph_config": {
+            "decode": {
+              "backend": "disabled",
+              "max_bs": 256,
+              "bs": [
+                1,
+                2,
+                4,
+                8,
+                12,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120,
+                128,
+                136,
+                144,
+                152,
+                160,
+                168,
+                176,
+                184,
+                192,
+                200,
+                208,
+                216,
+                224,
+                232,
+                240,
+                248,
+                256
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            },
+            "prefill": {
+              "backend": "breakable",
+              "max_bs": 16384,
+              "bs": [
+                16384
+              ],
+              "tc_compiler": "eager",
+              "full_prefill_max_req": null,
+              "full_prefill_prefix_chunk_tokens": null
+            }
+          }
+        }
+      ],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

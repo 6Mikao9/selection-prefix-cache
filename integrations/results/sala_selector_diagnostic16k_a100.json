@@ -1,0 +1,2811 @@
+[
+  {
+    "run_id": "aa04f65bc5d8483b83e1295fa89c9065",
+    "mode": "baseline",
+    "phase": "warmup",
+    "wall_seconds": 3.1332092080265284,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "86df26aa7f524413af580b6f18e36321",
+    "mode": "baseline",
+    "phase": "strict",
+    "wall_seconds": 3.928221666254103,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "d0bbea8184c7440eaecf97deeaf50ff7",
+    "mode": "capture",
+    "phase": "capture",
+    "wall_seconds": 6.1324858530424535,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "5b8d361411464885830a815c51f9fdf8",
+    "mode": "gpu",
+    "phase": "strict",
+    "wall_seconds": 3.890255485661328,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "48e337f744c742b7963eaccf4db5f24d",
+    "mode": "pinned",
+    "phase": "strict",
+    "wall_seconds": 3.9005101849325,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "7b77b6acb3cf49e7b74fc8a4f009d34e",
+    "mode": "baseline",
+    "phase": "warmup",
+    "wall_seconds": 1.8980874582193792,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "4cc9d71e4ea848a9bacada3cca82dde6",
+    "mode": "gpu",
+    "phase": "warmup",
+    "wall_seconds": 1.871434608940035,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "4ab975f41b9041be9aade49820f7689e",
+    "mode": "pinned",
+    "phase": "warmup",
+    "wall_seconds": 1.8773638438433409,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "056864b7824048b9b7e83b1ab5bfbbbb",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8734883139841259,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "5ddb530b6bed4a41af739c5b14dfed04",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8795659821480513,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "a1391025b50943fb9d97d26ec03f7221",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8822444039396942,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "501cb45c5c42448ca09a8e9fcc46310c",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8790222089737654,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "c114c2835f1a4490890e1d580bf34f12",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.9068939043208957,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "32ad5dcd6fda4f33b9b674c278eeea4c",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.880705307237804,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "b9dc2a940d0c4b21bd3c9fd862fbe9e1",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.910327314864844,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "958500a6f0414fe5bb3e258a381ec5e4",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.913011936005205,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "0aa5a722c41e4f218c063b6ee33f2828",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.9143207976594567,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "88f24a5b75464584ad2bd28bb5bce509",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.9100947263650596,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "4b8db28ec69d430fac30ea437f2704c3",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.88590850494802,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "d4d6ddd1d4564cbbbafce92021350750",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8860307079739869,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "faa5fb0ac6e14dc09c4469d525fbb338",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8832623050548136,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "aa8e890d41104989be4a915ea95f676b",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8827940821647644,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "5d5c89a0c606435694eeeaef0e61e626",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8876879620365798,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "eba911b9e7974a2b8a1156d7fc4cbc6b",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8836772250942886,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "f2de78a5a5404b779e15aabb81cdf1f2",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8805533391423523,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "e780ecd4f7644caab74313617a1042cb",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8877975530922413,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "7ced487dc4a549188f9aed96baefd774",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.9132861699908972,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "183050ac48024e80bd1703b02fe25b13",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.9164740568958223,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "8aa10a14992940e3b8497370911ea783",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8902911390177906,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "89749739ec474c3a9ae1194d874efc63",
+    "mode": "gpu",
+    "phase": "strict",
+    "wall_seconds": 3.9042012910358608,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "380fdaefeddd4cc49dfde42b201edfaa",
+    "mode": "pinned",
+    "phase": "strict",
+    "wall_seconds": 3.894661364145577,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "7b04dbaacb474981b91384582a1a5bd7",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.905790753196925,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "ca1a5d5d09984011a2bacf70f8019ae4",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.880721839144826,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "023ecff717a5403394b4156c1862e7f1",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.885028748307377,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "b6d96aba68204c79974de3b385420de3",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.90967784402892,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "85c428b0c75f40aeae3c40f60ff47b4f",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.8796882280148566,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "18111033703d4d3288b947430e805fa8",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.883352514822036,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "b9c5357a87194985b77cdf1c36e75b5c",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.9123199749737978,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "bec7accb0bc14b9595ab52574d17137c",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.885276968125254,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "a60c30a8237047b98ebaaf2bac8f8df0",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.888256679289043,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "d654cd71f9aa4a78a7dd65419998c4f0",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.9104201700538397,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "9b79fb3a216649959a0f1293fc10d650",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.88562823086977,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "3d59e9e0dd584d8cac085d8921b18819",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.8901339806616306,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "bad469419dae422a980051885e1e41b1",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.913100108038634,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "d3f893f0c19147eca27b6854c148b7ce",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.8863877346739173,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "807f9d1c5abc4effb841a76d918b2339",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.8873003842309117,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "73139257debb4e238f72f8671e25483f",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.9155442724004388,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "a7bd5d6b21c642c9ad562e623ac60189",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.8831161628477275,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "a0ff8bac5c124cb2ac998ba5d4078553",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.8849464929662645,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "28800cfe3bfb4ae3947d509919e324ac",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.9143613749183714,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "ed3dbdf2071547f5bbc814d7c0a1ac4e",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.8836250267922878,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "fa726777fe6849cda7cfa6173cf2e9e8",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.8834763928316534,
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "run_id": "086cc66d47364ef9a61b371c84fe7e77",
+    "mode": "baseline",
+    "phase": "drain",
+    "wall_seconds": 1.9164021001197398,
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  }
+]

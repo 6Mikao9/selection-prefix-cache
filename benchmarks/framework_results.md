@@ -6,6 +6,19 @@ validated limited MiniCPM-SALA replay, with no observed 16K CPU-zlib adapter
 speedup; see the [SALA results](sala_a100_results.md). Commands are in
 [integrations/README.md](../integrations/README.md).
 
+A later [selector diagnostic](selector_diagnostic_results.md) separates selector
+bypass from synchronous CPU inflate: GPU-resident reuse reduced measured 16K/24K
+offline first-token walltime by 1.69%/1.84%, and predecoded pinned-host reuse by
+1.42%/1.57%. These controls retain full indices and do not measure the bounded
+compressed pipeline. [DSA backend status](dsa_backend_status.md) records the
+current native-kernel and device blockers; no DSA benchmark is claimed.
+
+The [prefill-only graph/cache comparison](prefill_graph_results.md) now verifies
+actual breakable graph replay and dynamic selector reuse. Across matched eager
+and graph conditions, 16K model-forward CUDA intervals improved about 1.4–1.6%
+with cached selections; graph alone did not show a clear benefit. Decode graphs
+were disabled. These diagnostic caches hold complete uncompressed indices.
+
 ## Completed Qwen3-4B controls
 
 All runs used pretrained Qwen3-4B, dense FLASH_ATTN attention, vLLM 0.30.0,

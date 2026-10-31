@@ -178,3 +178,59 @@ Record disk usage for each task root, including model shards, interrupted
 downloads, environment/package cache hardlinks, runtime caches and results.
 Scope later cleanup to confirmed task-owned paths after processes exit and
 results are backed up; shared cache roots are not automatically task-owned.
+
+## Separate selector-cost diagnostic
+
+Use a separate worker hook directory for this diagnostic; do not install both
+adapters in one worker. Its `sitecustomize.py` should contain:
+
+```python
+import os
+if os.environ.get("SALA_DIAGNOSTIC_CONTROL"):
+    from integrations.sala_diagnostic_adapter import install
+    install(os.environ["SALA_DIAGNOSTIC_CONTROL"], os.environ["SALA_DIAGNOSTIC_LOG"])
+```
+
+Set `PYTHONPATH` to that hook directory and the repository. Set the two variables
+to new control/event paths, then on a confirmed idle GPU run:
+
+```bash
+python -m benchmarks.sala_selector_diagnostic \
+  --model "$SALA_MODEL" --control "$SALA_DIAGNOSTIC_CONTROL" \
+  --adapter-log "$SALA_DIAGNOSTIC_LOG" --output new-diagnostic.json \
+  --tokens 16384 --repeats 7 --pinned
+```
+
+The runner compares native selection, full GPU-resident selections and optional
+predecoded pinned-host selections. Capture and strict hashes are outside timing;
+seven randomized unprofiled trials are separate from seven CUDA-event profile
+trials. GPU and host copies are both retained: this is a cost diagnostic, not
+the memory-saving implementation. Events are collected at the next request's
+first hook after the previous request has completed, without per-layer GPU
+synchronization. Whole-request timings still include the diagnostic hook and
+small deferred log writes. See [results](../benchmarks/selector_diagnostic_results.md).
+
+The actual runtime token admission limit may be lower than the requested pool
+size. The tested .5-memory-fraction configuration admitted 24K but rejected
+32K before inference; it did not silently truncate the input.
+
+### Verified breakable prefill graph diagnostic
+
+The [prefill graph results](../benchmarks/prefill_graph_results.md) use a second
+worker adapter, `integrations.sala_prefill_probe_adapter.install`, in addition
+to the diagnostic selection adapter. Pass it `SALA_PREFILL_CONTROL` (the same
+path as `SALA_DIAGNOSTIC_CONTROL`) and a new `SALA_PREFILL_EVENTS` file.
+Set `SALA_PREFILL_SHAPE_FIX=1` for both eager and graph controls. This explicit
+process-local adapter restores MiniCPMLightningMixer's eager 2D attention-output
+contract before its unchanged output norm; it does not patch the installation.
+
+Add `--prefill-execution breakable --graph-events "$SALA_PREFILL_EVENTS"` to
+the diagnostic command. Repeat in a separate engine with
+`--prefill-execution eager` and new artifact paths. The graph configuration
+disables decode graphs and explicitly captures the full prefill token bucket.
+Every graph request must report actual backend replay, every measured selection
+request must report the expected eight native/cache calls, and strict checks
+must pass. Missing hooks or eager fallback are errors. Separate profile requests
+record ModelRunner.forward CUDA intervals; they include launch gaps and are not
+pure kernel sums. This verified breakable path does not establish Full/TC
+compatibility or dynamic Python-hook behavior in other graph backends.

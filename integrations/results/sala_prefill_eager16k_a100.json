@@ -1,0 +1,1166 @@
+{
+  "shape_adapter": "restore eager 2D attention contract",
+  "execution": "eager",
+  "branch": "native",
+  "status": "eager_control_completed",
+  "requested_graph_config": {
+    "decode": {
+      "backend": "disabled"
+    },
+    "prefill": {
+      "backend": "disabled",
+      "bs": [
+        16384
+      ],
+      "max_bs": 16384
+    }
+  },
+  "prompt_sha256": "36b4cfb2bda904bafdccef3efccb5d56786c21b11e89c07ee51b1f1d91cb9d98",
+  "limitation": "Separate profile records current-stream model forward GPU timeline including launch gaps, not pure kernel sum; walltime is offline first-token request, not server TTFT.",
+  "rows": [
+    {
+      "run_id": "16fbdce4f5ff4e51b119ebaa2a9dd6c2",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 3.1314430749043822,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "8ddfc5cf7c464b5aa495f68ce0df81b3",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.8934957194142044,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "2d4b63ca706a4f64ab9e281352acaf81",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.8986103027127683,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "8a7fc61829dc48799180ca90f93a3ff4",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.900489361025393,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "63b3f0b2fa844facab931ef492c6725a",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.8989374488592148,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "552d389fcb734906a9b9056a7ab43cec",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9034350118599832,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "f7120e8421314c76b1393aad939b1d06",
+      "phase": "warmup",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9061527368612587,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "2d23a6762d684c57a5f3e12123fcd831",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9046442871913314,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "034d1e926a6b48e5adf1077b83c122bd",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9046959020197392,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "2ec2e1913ed8460ba6c27437fd3d43db",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9077446348965168,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "1b04efb7718644d89f1a325ba54bcd84",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9106963998638093,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "7b1653ec52e043239708972bf2cd6aff",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9111566911451519,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "8b0935c10a234476b58db9b28395dc82",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.910064381081611,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "08fa86cc8b844a01bb467706f325e775",
+      "phase": "measurement",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9107320997864008,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "a9001ce3b12042e09cb68ac9c2fba036",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9123341543599963,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "0ebf1fa946e94c1e8020c5de66ff1027",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.914220950100571,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "ff96ef10ab79483d941b061e2dd47627",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9136448339559138,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "e9dc2b0d73774891bc6a0b80f8740e34",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9159835018217564,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "8c455107597b4bf69c2bd5a1a322086a",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.913549643009901,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "66dd6dce945c462d88a48f4f52cb006a",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9127844218164682,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "f2f3cb107f654834b7f0fcd250a1b019",
+      "phase": "profile",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9113969285972416,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "run_id": "ad6805b36d8f4ba8a8061f49a5fe5653",
+      "phase": "drain",
+      "output_equal": true,
+      "offline_wall_seconds": 1.9163640909828246,
+      "actual_prefill_replays": 0,
+      "replay_evidence": [],
+      "output": {
+        "text": " books",
+        "output_ids": [
+          6779
+        ],
+        "prompt_tokens": 16384,
+        "completion_tokens": 1,
+        "output_token_logprobs": [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ]
+        ],
+        "output_top_logprobs": [
+          [
+            [
+              -1.4305012882687151E-05,
+              6779,
+              null
+            ],
+            [
+              -11.875014305114746,
+              73440,
+              null
+            ],
+            [
+              -13.750014305114746,
+              10271,
+              null
+            ],
+            [
+              -13.937514305114746,
+              16815,
+              null
+            ],
+            [
+              -13.937514305114746,
+              15509,
+              null
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

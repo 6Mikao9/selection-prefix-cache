@@ -1,0 +1,26 @@
+{
+  "status": "capture_failed_no_benchmark",
+  "execution": "breakable",
+  "branch": "native",
+  "tokens": 16384,
+  "decode_graph_backend": "disabled",
+  "prefill_capture_buckets": [16384],
+  "mem_fraction_static": 0.5,
+  "exit_code": -9,
+  "measurement_rows": 0,
+  "events_artifact_present": false,
+  "hook_installation_error": "AttributeError: PrefillCudaGraphRunner has no attribute replay",
+  "capture_exception": "ValueError: Mismatched mW.shape[0]; rmsnorm_cute expected weight extent 128",
+  "relative_frames": [
+    "sglang/srt/model_executor/runner_backend/breakable_cuda_graph_backend.py:123 capture_one warmup_out=forward_fn()",
+    "sglang/srt/models/minicpm.py:346 self.o_norm(o)",
+    "sglang/srt/layers/layernorm.py:601 rmsnorm(x, weight, epsilon)",
+    "sgl_kernel/elementwise.py:120 flashinfer norm dispatch",
+    "flashinfer/norm/__init__.py:196 rmsnorm_cute",
+    "flashinfer/norm/kernels/rmsnorm.py:1334 kernel invocation"
+  ],
+  "observed": "Weights loaded; capture warmup failed before measurements. No successful prefill graph replay established.",
+  "root_cause": "Unresolved shape-contract mismatch; no evidence of weight corruption or numerical precision failure.",
+  "candidate_official_process_flag": "FLASHINFER_USE_CUDA_NORM=1",
+  "candidate_flag_status": "Source-supported dispatch alternative, not yet tested; does not waive shape or equivalence validation."
+}

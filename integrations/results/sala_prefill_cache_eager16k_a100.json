@@ -1,0 +1,3138 @@
+[
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "40fe1d62a40b4d72a2433fc3aebbdcc7",
+    "mode": "baseline",
+    "phase": "warmup",
+    "wall_seconds": 3.115740578621626,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "0e1f25d8e5f3420082d2429619cf2afa",
+    "mode": "baseline",
+    "phase": "strict",
+    "wall_seconds": 3.886822647880763,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "fbc242c4272444aa9afcf434f4ec58ba",
+    "mode": "capture",
+    "phase": "capture",
+    "wall_seconds": 6.071144581772387,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "9d8643dee3894ad7adfb69f83bf5fdb3",
+    "mode": "gpu",
+    "phase": "strict",
+    "wall_seconds": 3.8664957699365914,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "1763ff0513414d48b7d91c58ae35cc8a",
+    "mode": "pinned",
+    "phase": "strict",
+    "wall_seconds": 3.8658518129959702,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "bde2367d241a40d1b667ac3c80ce9b72",
+    "mode": "baseline",
+    "phase": "warmup",
+    "wall_seconds": 1.8976986343041062,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "8259a5fc9c714b9995fad21753c4f75a",
+    "mode": "gpu",
+    "phase": "warmup",
+    "wall_seconds": 1.8720044288784266,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "aec6cc8681fa4eef84bd94bbb53ab0bf",
+    "mode": "pinned",
+    "phase": "warmup",
+    "wall_seconds": 1.8754192139022052,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "8058e2414b924273b52ea7bee27a23d9",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8755542119033635,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "567915a98beb46a8a357b582d4267ae1",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8790307892486453,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "4749320b660b49279ad38f3da0eb55ff",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8764636181294918,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "93d689f693fa4c43b64b496490f6f706",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8744859457947314,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "8504fb2957cd408eb9d2c39fceafe671",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.9068520753644407,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "908235a813034399971bf855630c51ab",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8806919809430838,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "78b8fb342a4840f39718a54347418902",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.9049435341730714,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "64a7a454cc3641cfbf22880930a9c7b6",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.9056032984517515,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "144902fb2fa54abebeba538fe63149f5",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.9069983018562198,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "aa13626fa7ac42a191f19fc69a6fd3ae",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.9073154269717634,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "34ac4a88935c4c0ba726d1e290775bca",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.885519560892135,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "2d262b8a12c14dbb89c2e9a0b50e27b5",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.880372942890972,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "4b3f1cee657f477bac687eb67164eb8e",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8788443743251264,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "9d59b7d6e01e46b2934c24af8af6fc4b",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.886335559654981,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "d9509d9390a044e5a04a8ae4cddc0688",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8873915118165314,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "d5ca6242e8074ababc38fd4c9df5f854",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.884480046108365,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "d18f74044077475fa43aeca1705d2b65",
+    "mode": "gpu",
+    "phase": "unprofiled",
+    "wall_seconds": 1.87882887898013,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "f6b6d3265faa40a0ae02c02e820db4c4",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.8893691059201956,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "b22ca649bf294992a6027d482a8c30ec",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.9111879291012883,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "a6a6cc10e9634fa090ed63e6238fd3b0",
+    "mode": "baseline",
+    "phase": "unprofiled",
+    "wall_seconds": 1.91041081212461,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "9b26c0a690974f64ad7c341dd6bdb6fe",
+    "mode": "pinned",
+    "phase": "unprofiled",
+    "wall_seconds": 1.886440983042121,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "f2b9e615c1ca4cda92b1de6a5ff0b7ec",
+    "mode": "gpu",
+    "phase": "strict",
+    "wall_seconds": 3.8685050630010664,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "96c73e94fbe84ffdaff6e6e2cecb6a3e",
+    "mode": "pinned",
+    "phase": "strict",
+    "wall_seconds": 3.8673677211627364,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "86e0356207fc47eaadd89110f20d21e5",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.9060879182070494,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "86e0356207fc47eaadd89110f20d21e5",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1869.20751953125
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "547684a50a6a41dca5b34a257faede40",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.88222764339298,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "547684a50a6a41dca5b34a257faede40",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1845.42919921875
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "2ee1d1f67b364b72b64a6f9f83c5d1e2",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.8826386430300772,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "2ee1d1f67b364b72b64a6f9f83c5d1e2",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1845.72412109375
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "99d596674014474498ed8707bf7b831e",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.9109160639345646,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "99d596674014474498ed8707bf7b831e",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1874.9112548828125
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "99b31d611a8c448db8f91c19af006d45",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.879395843949169,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "99b31d611a8c448db8f91c19af006d45",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1842.4637451171875
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "73551a72c9ff4c72b5f900f14700b1f6",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.884756508283317,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "73551a72c9ff4c72b5f900f14700b1f6",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1847.841796875
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "31a45f5015274f4ba2e47eeb7c81b899",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.9173128991387784,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "31a45f5015274f4ba2e47eeb7c81b899",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1880.13671875
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "19465423e6a141af9d3abd5c5430c0f6",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.8811669168062508,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "19465423e6a141af9d3abd5c5430c0f6",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1844.6888427734375
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "b7130d9f02cd40ebb83a7a93c4e82027",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.8861847589723766,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "b7130d9f02cd40ebb83a7a93c4e82027",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1849.2528076171875
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "ed0a4223e0904013bf7e66e1c46d13a9",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.9152901661582291,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "ed0a4223e0904013bf7e66e1c46d13a9",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1878.67236328125
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "dbd379495db54fc28010b6c001b78429",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.886108132544905,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "dbd379495db54fc28010b6c001b78429",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1849.291748046875
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "0ffab3398168467c97a36482234cb2b5",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.8851218223571777,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "0ffab3398168467c97a36482234cb2b5",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1848.07421875
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "fa6a2ba115744b7f978de89e9aad9658",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.910885114222765,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "fa6a2ba115744b7f978de89e9aad9658",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1874.1217041015625
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "71f46bba134b4ef58122eb9a5f42a5ce",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.8808247540146112,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "71f46bba134b4ef58122eb9a5f42a5ce",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1843.69873046875
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "59bbccef7f8047c6a24d775ead4a3878",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.8874221667647362,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "59bbccef7f8047c6a24d775ead4a3878",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1850.8809814453125
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "fe52ee3db2744b318ba2712a665a3ea0",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.9130235840566456,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "fe52ee3db2744b318ba2712a665a3ea0",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1876.211669921875
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "7fb0e97cd27647f8af230af6d6908a88",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.8818696606904268,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "7fb0e97cd27647f8af230af6d6908a88",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1844.5291748046875
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "d302fea304284d279dfa5d06abdf2370",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.8903931248933077,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "d302fea304284d279dfa5d06abdf2370",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1853.7615966796875
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "6db19b8a8b724612af7b5f86535118a8",
+    "mode": "baseline",
+    "phase": "profile",
+    "wall_seconds": 1.9117074352689087,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "6db19b8a8b724612af7b5f86535118a8",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1875.0269775390625
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "8b633cc026a54dec8eb7481fa47ebe0a",
+    "mode": "gpu",
+    "phase": "profile",
+    "wall_seconds": 1.8876090608537197,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "8b633cc026a54dec8eb7481fa47ebe0a",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1850.21240234375
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "6000c70ab5ee4ce2a9198e22e3a2ac83",
+    "mode": "pinned",
+    "phase": "profile",
+    "wall_seconds": 1.88510233303532,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": true,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT",
+    "prefill_cuda_interval": {
+      "run_id": "6000c70ab5ee4ce2a9198e22e3a2ac83",
+      "kind": "prefill_forward_cuda_interval",
+      "tokens": 16384,
+      "method": "ModelRunner.forward",
+      "scope": "current-stream model forward GPU timeline including launch gaps; not kernel sum",
+      "cuda_ms": 1847.5172119140625
+    }
+  },
+  {
+    "prefill_execution": "eager",
+    "shape_adapter": "restore eager 2D attention contract",
+    "actual_prefill_replays": 0,
+    "run_id": "357ce8f5d7f244819009318b7dc97f3c",
+    "mode": "baseline",
+    "phase": "drain",
+    "wall_seconds": 1.917141507845372,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151e-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151e-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    },
+    "output_equal": true,
+    "profile": false,
+    "timing_kind": "offline first-token walltime with diagnostic hook; not server TTFT"
+  }
+]
