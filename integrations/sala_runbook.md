@@ -14,18 +14,23 @@ double-buffer pipeline in the main prototype.
   `9180fe1db74f71fb81bc7105efe88f6b19c959b0`.
 - Four BF16 safetensors shards total 18,954,453,608 bytes; SHA256 checked on the
   download machine and the initial evaluation machine.
-- Random-tensor native nonfused operator probe at 16,384 queries passed exact
-  equality for head lengths 8,192, 12,288, and 16,384 when both compressed-key
+- Random-tensor native nonfused operator probe on A100 at 16,384 queries passed exact
+  equality for head lengths 2,048, 4,096, 8,192, 12,288, and 16,384 when both compressed-key
   levels were cropped to their native head lengths. This is operator evidence,
   not a pretrained-model result.
 - The fused operator produced differing indices for immediately repeated full
   calls on identical random inputs. Its active sparse suffix also differed.
-  The planned model runs therefore use native `minicpm_flashattn` (nonfused).
+  The model runs therefore use native `minicpm_flashattn` (nonfused).
 - The initial pretrained-model launch failed before loading weights because
   CUDA driver initialization failed. Binding the intended card by UUID also
-  failed. No SALA model-quality or model-performance result is available.
-- The CPU-tail adapter revision has passed syntax checks; its GPU model
-  execution has not yet been verified.
+  failed. A later run used a new isolated A100 environment and successfully loaded
+  the model without changing the previous environment.
+- Strict native model capture/replay and separate timing have completed on A100.
+  See [executed model evidence](../benchmarks/sala_a100_results.md), including
+  exact scope and task limitations. The 16K CPU-zlib adapter showed no observed
+  speedup; this is separate from the main prototype's CUDA pipeline.
+- The complete 33-test CPU/CUDA suite also passed in the isolated Torch 2.13/cu130
+  environment. No other workload was present on the explicitly bound card at launch.
 
 ## Restore execution after the accelerator is available
 
@@ -82,6 +87,10 @@ export TMPDIR="$SALA_TASK_DIR/tmp"
 export TRITON_CACHE_DIR="$SALA_TASK_DIR/triton"
 export TILELANG_CACHE_DIR="$SALA_TASK_DIR/tilelang"
 export TORCH_EXTENSIONS_DIR="$SALA_TASK_DIR/torch-extensions"
+export SGLANG_JIT_CACHE_DIR="$SALA_TASK_DIR/sglang-jit"
+export CUDA_CACHE_PATH="$SALA_TASK_DIR/cuda-driver-cache"
+export FLASHINFER_WORKSPACE_BASE="$SALA_TASK_DIR/flashinfer"
+export TORCHINDUCTOR_CACHE_DIR="$SALA_TASK_DIR/torchinductor"
 ```
 
 First run strict model capture/replay. The driver disables CUDA graphs and radix
@@ -94,7 +103,8 @@ Intermediate cuts align to 64 query tokens; H=N includes the final partial block
   --model "$SALA_TASK_DIR/model" --control "$SALA_REPLAY_CONTROL" \
   --adapter-log "$SALA_REPLAY_LOG" \
   --output "$SALA_TASK_DIR/smoke-16k-strict.json" --tokens 16384 \
-  --backend minicpm_flashattn --verify --repeats 3
+  --backend minicpm_flashattn --verify --repeats 3 \
+  --mem-fraction-static 0.5 --max-total-tokens 32768 --max-new-tokens 1
 ```
 
 Strict verification hashes queries and recomputed head indices through the CPU.
@@ -102,7 +112,8 @@ That synchronization changes timing. After strict verification passes, run again
 without `--verify` and save a separate timing artifact. Capture calls include the
 first native selection, CPU transfer, and tail compression and must be excluded
 from replay-hit latency statistics. Report generation time as generation time,
-not TTFT. Event logs report actual selector rows, raw/compressed tail bytes,
+not server TTFT. With one generated token the label is offline first-token
+generation walltime. Event logs report selector argument rows, raw/compressed tail bytes,
 capture time, decode/copy time, and zero persistent GPU cache bytes. A complete
 working output tensor is still allocated during replay.
 
@@ -152,4 +163,18 @@ MiniCPM classes did not include SALA, and it had neither the MiniCPM sparse back
 nor InfLLMv2 operators. Existing Transformers/FLA/FlashAttention/FlashInfer do not
 provide those missing native SGLang components. A separate compatible environment
 is required; copying this adapter into that installation is insufficient. Do not
-upgrade or replace its existing packages in place.
+upgrade or replace its existing packages in place. The executed A100 runs used
+a new Python 3.10 environment containing SGLang 0.5.20, Torch 2.13.0/cu130 and
+Transformers 5.12.1.
+
+When CUDA is supplied by Python wheels, JIT linking may require an unversioned
+`libcudart.so` link that the wheel does not provide. The A100 run created that
+link in its own task directory, pointing at the installed `libcudart.so.13`, and
+set process-local `LIBRARY_PATH` and `LD_LIBRARY_PATH`. It did not change the
+system CUDA installation or any existing environment. Keep this conditional
+workaround separate from standard CUDA toolkit installations.
+
+Record disk usage for each task root, including model shards, interrupted
+downloads, environment/package cache hardlinks, runtime caches and results.
+Scope later cleanup to confirmed task-owned paths after processes exit and
+results are backed up; shared cache roots are not automatically task-owned.

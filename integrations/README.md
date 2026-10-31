@@ -129,28 +129,20 @@ The script would check head indices, generated token and returned top-10
 logprobs, not full-vocabulary logits. CPU copies and synchronization make its
 timings diagnostic rather than performance evidence.
 
-## MiniCPM-SALA: operator probe only; model evaluation pending
+## MiniCPM-SALA: limited native model replay validated on A100
 
-SGLang 0.5.20 contains the MiniCPM-SALA model/backend. A **random operator-only**
-16K nonfused selector probe found identical head selections for
-H=8192/12288/16384 when both compressed-key levels were cropped using native
-compression formulas. It did not load pretrained model weights.
-
-The real MiniCPM-SALA model has **never loaded in these experiments**. Container
-CUDA/device failures blocked further work on the RTX 5090 environment. Read-only
-inspection of the alternate A100 environment confirmed a separate dependency
-blocker: its SGLang 0.5.2 lacks SALA model classes, the MiniCPM sparse backend,
-InfLLMv2 operators and TileLang. It cannot run these adapters directly. No
-packages were installed or modified there; a compatible isolated environment
-would be required.
-The latest [CPU-zlib tail adapter](sala_native_adapter.py) has **not been GPU
-tested**. No native model equivalence, quality, memory-saving or speed result
-follows from the earlier random operator probe.
+SGLang 0.5.20 contains the MiniCPM-SALA model/backend. After the initial RTX 5090
+CUDA/device failure, a new isolated A100 environment was prepared without
+modifying the existing SGLang 0.5.2 installation. The pinned pretrained model
+loaded successfully, and the CPU-zlib tail adapter passed strict synthetic and
+small natural-document capture/replay checks. A separate 16K one-token run
+showed no observed walltime speedup. See the [A100 model results](../benchmarks/sala_a100_results.md)
+for exact sample scope, output/logprob checks, capacity, raw timing and caveats.
 
 The adapter must be installed inside every model worker before Engine creation.
 It targets one request with unchunked full prefill; native KV compression,
-linear state and logical-to-physical conversion still run. This recipe is for
-future validation on a compatible environment, not a completed model run.
+linear state and logical-to-physical conversion still run. This recipe requires
+a compatible environment and an idle GPU. It is not a production plugin.
 Prepare benchmark records with **the SALA tokenizer**, not Qwen token IDs.
 See the [SALA recovery and evaluation runbook](sala_runbook.md) for worker setup,
 checkpoint revision and environment requirements.
@@ -182,10 +174,13 @@ python -m benchmarks.sala_quality_subset --model "$MODEL" \
   --fractions 0,0.5,0.75,1 --chat-template --verify
 ```
 
-The SALA runner's `--chat-template` sets `enable_thinking=False`. It disables
-radix caching and flushes engine cache before each mode. Its current Engine
-configuration uses memory fraction 0.78 and a 32K context; check capacity before
-running. Both model drivers require `--adapter-log` for capture/replay (quality
+The SALA runner's `--chat-template` passes `enable_thinking=False`, but this
+checkpoint's template does not implement that switch. In the measured chat
+baseline, thinking exhausted the 32-token budget; raw and chat protocols are
+reported separately. The runner disables radix caching and flushes engine cache
+before each mode. Memory fraction defaults to 0.78, with a 32K context and
+`--max-total-tokens 32768`; A100 runs used `--mem-fraction-static 0.5`.
+Both model drivers require `--adapter-log` for capture/replay (quality
 baseline-only mode is the exception). It must point to the exact log passed to
 worker `install()`. They validate fresh events by `run_id`, request identity,
 mode, unique layer coverage, effective split and actual native selector query

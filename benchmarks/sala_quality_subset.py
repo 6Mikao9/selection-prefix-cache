@@ -30,7 +30,13 @@ def main():
     p.add_argument('--verify',action='store_true')
     p.add_argument('--baseline-only',action='store_true')
     p.add_argument('--chat-template',action='store_true')
+    p.add_argument('--mem-fraction-static', type=float, default=0.78)
+    p.add_argument('--max-total-tokens', type=int, default=32768)
     args=p.parse_args()
+    if not 0 < args.mem_fraction_static < 1:
+        p.error('--mem-fraction-static must be finite and strictly between 0 and 1')
+    if args.max_total_tokens < 1:
+        p.error('--max-total-tokens must be positive')
     if not 1 <= args.limit_per_task <= 64:
         p.error('--limit-per-task must be 1..64')
     if Path(args.output).exists():
@@ -52,7 +58,8 @@ def main():
     Path(args.control).write_text(json.dumps(dict(mode='baseline')),encoding='utf-8')
     engine=sgl.Engine(model_path=args.model,trust_remote_code=True,
         attention_backend=args.backend,disable_radix_cache=True,disable_cuda_graph=True,
-        mem_fraction_static=0.78,max_running_requests=1,context_length=32768,
+        mem_fraction_static=args.mem_fraction_static,max_running_requests=1,context_length=32768,
+        max_total_tokens=args.max_total_tokens,
         chunked_prefill_size=32768,log_level='warning')
     try:
         with open(args.output,'w',encoding='utf-8') as f:

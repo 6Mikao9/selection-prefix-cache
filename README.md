@@ -2,7 +2,7 @@
 
 一个可运行的研究原型：KV 前缀缓存被淘汰后，保留压缩的稀疏选择记录；重复 prefill 时，分块预取并提前解压选择索引，让当前计算与后续准备重叠。
 
-**A small research prototype for compressed selection replay with bounded CUDA buffers.** Storage, prefetch/decode and head/tail splitting are tested. Experimental serving adapters are included, but native model replay and end-to-end speedup remain unverified.
+**A small research prototype for compressed selection replay with bounded CUDA buffers.** Storage, prefetch/decode and head/tail splitting are tested. Native MiniCPM-SALA replay has passed limited SGLang checks; the separate CPU-zlib adapter has not demonstrated end-to-end speedup.
 
 ## 做了什么
 
@@ -127,7 +127,7 @@ ID 范围为 `0..65535`；65535 是合法 ID，不作为 sentinel。拒绝浮点
 
 ## 边界
 
-`integrations/` 包含实验性的 vLLM DSA 和 SGLang SALA 适配脚本，以及已执行的 Qwen3-4B dense 质量基线。原生稀疏模型重放尚未通过：DSA 遇到后端依赖不兼容，SALA 遇到设备 CUDA 故障。它们不是生产插件，也没有实现 prefix lookup/淘汰和生产请求调度。详见[框架执行结果](benchmarks/framework_results.md)与[接入说明](integrations/README.md)。
+`integrations/` 包含实验性的 vLLM DSA 和 SGLang SALA 适配脚本，以及 Qwen3-4B dense 质量基线。5090 发生 CUDA 故障后，已在 A100 的独立环境跑通真实 MiniCPM-SALA 捕获与重放；16K 同步 CPU-zlib 适配器尚未测到加速，且尚未接入本原型的 CUDA 双缓冲。DSA 仍受后端依赖不兼容阻断。这些不是生产插件，没有实现 prefix lookup/淘汰和生产请求调度。详见[SALA 实测](benchmarks/sala_a100_results.md)、[框架结果](benchmarks/framework_results.md)与[接入说明](integrations/README.md)。
 
 缓存文件仅面向本程序写出的可信记录。写入和内存存储构造时会验证编码内容，磁盘读取检查包长度与 SHA-256；校验和用于发现损坏，不提供来源认证，也不使任意第三方缓存文件可信。
 

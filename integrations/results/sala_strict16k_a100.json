@@ -1,0 +1,1520 @@
+[
+  {
+    "mode": "baseline",
+    "head_fraction": 1,
+    "wall_seconds": 1.9168506381101906,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 16384,
+    "native_selector_queries_per_layer": 16384,
+    "adapter_interception_verified": true,
+    "text_equal": null,
+    "output_token_logprobs_equal": null,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "baseline",
+    "head_fraction": 1,
+    "wall_seconds": 1.8948648641817272,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 16384,
+    "native_selector_queries_per_layer": 16384,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "baseline",
+    "head_fraction": 1,
+    "wall_seconds": 1.8953039683401585,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 16384,
+    "native_selector_queries_per_layer": 16384,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "capture",
+    "head_fraction": 0.0,
+    "wall_seconds": 4.072375620249659,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 0,
+    "native_selector_queries_per_layer": 16384,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 0.0,
+    "wall_seconds": 3.9518924518488348,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 0,
+    "native_selector_queries_per_layer": 0,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 0.0,
+    "wall_seconds": 3.9560692850500345,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 0,
+    "native_selector_queries_per_layer": 0,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 0.0,
+    "wall_seconds": 3.965030189137906,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 0,
+    "native_selector_queries_per_layer": 0,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "capture",
+    "head_fraction": 0.125,
+    "wall_seconds": 4.066910449415445,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 2048,
+    "native_selector_queries_per_layer": 16384,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 0.125,
+    "wall_seconds": 3.896717319265008,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 2048,
+    "native_selector_queries_per_layer": 2048,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 0.125,
+    "wall_seconds": 3.904303156770766,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 2048,
+    "native_selector_queries_per_layer": 2048,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 0.125,
+    "wall_seconds": 3.9117049132473767,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 2048,
+    "native_selector_queries_per_layer": 2048,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "capture",
+    "head_fraction": 0.25,
+    "wall_seconds": 4.037916689179838,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 4096,
+    "native_selector_queries_per_layer": 16384,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 0.25,
+    "wall_seconds": 3.908661392983049,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 4096,
+    "native_selector_queries_per_layer": 4096,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 0.25,
+    "wall_seconds": 3.9163447148166597,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 4096,
+    "native_selector_queries_per_layer": 4096,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 0.25,
+    "wall_seconds": 3.9232104350812733,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 4096,
+    "native_selector_queries_per_layer": 4096,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "capture",
+    "head_fraction": 0.5,
+    "wall_seconds": 4.002064907923341,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 8192,
+    "native_selector_queries_per_layer": 16384,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 0.5,
+    "wall_seconds": 3.905528330244124,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 8192,
+    "native_selector_queries_per_layer": 8192,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 0.5,
+    "wall_seconds": 3.914652235340327,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 8192,
+    "native_selector_queries_per_layer": 8192,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 0.5,
+    "wall_seconds": 3.9192086127586663,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 8192,
+    "native_selector_queries_per_layer": 8192,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "capture",
+    "head_fraction": 1.0,
+    "wall_seconds": 3.934486798942089,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 16384,
+    "native_selector_queries_per_layer": 16384,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 1.0,
+    "wall_seconds": 3.9095874270424247,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 16384,
+    "native_selector_queries_per_layer": 16384,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 1.0,
+    "wall_seconds": 3.919901309069246,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 16384,
+    "native_selector_queries_per_layer": 16384,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "mode": "replay",
+    "head_fraction": 1.0,
+    "wall_seconds": 3.9171521170064807,
+    "timing_kind": "offline first-token generation walltime, not server TTFT; hook synchronization and CPU zlib included",
+    "layers": [
+      0,
+      9,
+      16,
+      17,
+      22,
+      29,
+      30,
+      31
+    ],
+    "selector_calls": 8,
+    "effective_head": 16384,
+    "native_selector_queries_per_layer": 16384,
+    "adapter_interception_verified": true,
+    "text_equal": true,
+    "output_token_logprobs_equal": true,
+    "output": {
+      "text": " books",
+      "output_ids": [
+        6779
+      ],
+      "prompt_tokens": 16384,
+      "completion_tokens": 1,
+      "output_token_logprobs": [
+        [
+          -1.4305012882687151E-05,
+          6779,
+          null
+        ]
+      ],
+      "output_top_logprobs": [
+        [
+          [
+            -1.4305012882687151E-05,
+            6779,
+            null
+          ],
+          [
+            -11.875014305114746,
+            73440,
+            null
+          ],
+          [
+            -13.750014305114746,
+            10271,
+            null
+          ],
+          [
+            -13.937514305114746,
+            16815,
+            null
+          ],
+          [
+            -13.937514305114746,
+            15509,
+            null
+          ]
+        ]
+      ]
+    }
+  }
+]

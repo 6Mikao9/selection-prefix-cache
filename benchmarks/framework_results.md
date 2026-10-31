@@ -1,9 +1,10 @@
 # Pretrained-model controls and native adapter status
 
-Completed dense-model task controls and uncompleted native sparse-model
-integration are separate evidence. None of the completed pretrained-model runs
-measures selection-replay speedup, TTFT improvement or replay quality retention.
-Commands are in [integrations/README.md](../integrations/README.md).
+Dense-model task controls and native sparse-model replay are separate evidence.
+The Qwen controls below do not measure replay benefits. Subsequent A100 runs
+validated limited MiniCPM-SALA replay, with no observed 16K CPU-zlib adapter
+speedup; see the [SALA results](sala_a100_results.md). Commands are in
+[integrations/README.md](../integrations/README.md).
 
 ## Completed Qwen3-4B controls
 
@@ -95,9 +96,9 @@ boundary and is not model TTFT either.
 | Path | Evidence obtained | Missing evidence/status |
 |---|---|---|
 | vLLM GLM DSA | Real tiny checkpoint launch attempted; CPU mocked-hook contract passed | Sparse-MLA dependency blocked construction on SM120; no native capture/replay result |
-| SGLang SALA operator | Random 16K nonfused selector, H=8192/12288/16384 matched the full-prefix selection | No weights loaded; does not test latest CPU-zlib adapter or all model states |
-| SGLang SALA model | Adapter and benchmark runners prepared | Pretrained model never loaded; container CUDA failures blocked evaluation; latest tail adapter untested on GPU |
-| A100 SALA dependency inspection | Read-only check confirmed SGLang 0.5.2 lacks SALA classes/backend, InfLLMv2 operators and TileLang | Cannot execute SALA directly; no packages installed or modified, no native model result |
+| SGLang SALA operator | A100 random 16K nonfused selector, H=2048/4096/8192/12288/16384 matched full-prefix selection | Operator-only evidence remains distinct from model checks |
+| SGLang SALA model | Pinned pretrained model loaded on A100; strict capture/replay and separate timing completed | Limited evidence in [SALA report](sala_a100_results.md); CPU-zlib adapter is not the CUDA double-buffer pipeline |
+| A100 environment | New isolated SGLang 0.5.20 / Torch 2.13-cu130 environment; 33 CPU/CUDA tests passed | Existing SGLang 0.5.2 installation was not modified |
 
 The vLLM failure was `FLASHINFER_MLA_SPARSE_SM120 requires FlashInfer's sparse
 MLA decode API`; Triton MLA did not support sparse MLA, and the installed
@@ -110,17 +111,19 @@ block-table conversion to the framework. CPU-zlib tail storage is an adapter
 baseline, separate from the repository's CUDA codec/transfer pipeline. SALA head
 recomputation crops both compressed-key levels to avoid bottom-right causal
 alignment shifts. Random operator agreement supports that limited indexing
-check, not model output equivalence. Native model validation still needs weight
-loading, identical input IDs, fresh KV/linear state, actual selector-skip
-evidence, matching outputs and specified logprob/logit checks before any
-quality-retention claim.
+check, not model output equivalence. Subsequent native SALA runs checked identical
+inputs, fresh requests without radix caching, actual selector interception,
+query/head-index hashes and returned-token outputs/logprobs. Their exact scope
+and small task subsets are reported separately; full vocabulary logits and
+production serving behavior remain untested.
 
 The reviewed SALA drivers now require `--adapter-log` for capture/replay and
 validate fresh events against the current `run_id`, input identity, mode,
 unique sparse-layer coverage, effective head and actual native selector query
 counts. Missing hooks, dense-only execution, stale logs or incomplete layer
-coverage cannot count as successful replay. This is a driver safeguard, not
-evidence of a completed GPU model run. See the
+coverage cannot count as successful replay. See the
 [SALA recovery and evaluation runbook](../integrations/sala_runbook.md) for
-checkpoint pinning and setup; the alternate A100 installation remains blocked
-by missing native dependencies rather than an untested compatibility assumption.
+checkpoint pinning and setup. The original 5090 failure was still present at
+recheck: GPU 2 was unavailable and explicit binding of another GPU still failed
+CUDA initialization. This does not establish a hardware root cause; no GPU reset
+or driver change was performed.
