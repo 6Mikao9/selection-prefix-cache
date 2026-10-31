@@ -1,0 +1,702 @@
+{
+  "date": "2026-10-31",
+  "test_result": {
+    "passed": 17,
+    "failed": 0,
+    "skipped": 0
+  },
+  "source_sha256": {
+    "demo.py": "2e81df15dcf446f2066b7040b5ce1200b11bd558564dc712bea58e2ee69c35e1",
+    "selection_cache/__init__.py": "0cb50d40175b46d65560d0ba81b1649bde0b4207d2e5cebcca67d7727c0b07fa",
+    "selection_cache/store.py": "8a12cc76eb363ab4bd3c8bafc6547f3d81c862d6f183de99f352140dcfcc736d",
+    "selection_cache/cuda.py": "0554c9113f88ce4da26e5d0456c2c379bd541b11892c63d48aa637ab08d4e8e7",
+    "tests/test_store.py": "8d06527608427b957cf4e2934e450e6ea41fa7e84daa8aa5eae459513ce6e0c4",
+    "tests/test_cuda.py": "b69584613f7bfd5a3bab1ab544a0e03ec6cb2fbec0a1e82f5de8e26caf46a5d0"
+  },
+  "notes": [
+    "Synthetic sets and matrix-multiply consumer, not model performance.",
+    "Shared A100; fixed run order, five repeats per mode; no statistical speedup claim.",
+    "Disk path is warmed by validation and repeated reads; not cold SSD throughput.",
+    "Peak allocated memory includes validation clones."
+  ],
+  "runs": {
+    "disk": {
+      "kind": "synthetic-streaming-selection-replay",
+      "config": {
+        "chunks": 16,
+        "rows": 256,
+        "k": 512,
+        "universe": 8192,
+        "seed": 17,
+        "buffers": 2,
+        "compute_size": 2048,
+        "compute_iters": 4,
+        "repeats": 5,
+        "source": "disk",
+        "device": "cuda"
+      },
+      "capacity": {
+        "raw": {
+          "payload_bytes": 4194304,
+          "manifest_bytes": 3210,
+          "codecs": {
+            "raw_u16": 16,
+            "union_bitmap": 0
+          },
+          "encode_validate_write_ms": 45.33638199791312
+        },
+        "compressed": {
+          "payload_bytes": 1526144,
+          "manifest_bytes": 3266,
+          "codecs": {
+            "raw_u16": 5,
+            "union_bitmap": 11
+          },
+          "encode_validate_write_ms": 94.70113599672914
+        }
+      },
+      "limits": [
+        "No model, selector or end-to-end prefill integration.",
+        "Disk reads may hit the OS page cache; not a cold SSD benchmark.",
+        "Selection sets are sorted; original top-k order is not preserved.",
+        "Only index buffers are bounded; this does not replace the main KV cache."
+      ],
+      "cpu_roundtrip": {
+        "raw": {
+          "wall_ms_including_validation": 81.1454001814127,
+          "all_indices_exact": true,
+          "chunks": 16
+        },
+        "compressed": {
+          "wall_ms_including_validation": 26.21024800464511,
+          "all_indices_exact": true,
+          "chunks": 16
+        }
+      },
+      "cuda": {
+        "raw_serial": {
+          "all_indices_exact": true,
+          "samples": [
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 0.0054682777263224125,
+              "host_staging_reuse_wait_seconds": 7.958943024277687e-05,
+              "host_serial_consumer_wait_seconds": 0.0073087578639388084,
+              "wall_seconds": 0.018754147924482822
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 0.005365288350731134,
+              "host_staging_reuse_wait_seconds": 7.89230689406395e-05,
+              "host_serial_consumer_wait_seconds": 0.0073105222545564175,
+              "wall_seconds": 0.01865164702758193
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 0.005305710714310408,
+              "host_staging_reuse_wait_seconds": 7.914472371339798e-05,
+              "host_serial_consumer_wait_seconds": 0.0072927228175103664,
+              "wall_seconds": 0.01861661486327648
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 0.005285617429763079,
+              "host_staging_reuse_wait_seconds": 7.967418059706688e-05,
+              "host_serial_consumer_wait_seconds": 0.007303581573069096,
+              "wall_seconds": 0.018561322707682848
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 0.0052944994531571865,
+              "host_staging_reuse_wait_seconds": 7.802248001098633e-05,
+              "host_serial_consumer_wait_seconds": 0.00731100607663393,
+              "wall_seconds": 0.018552287947386503
+            }
+          ]
+        },
+        "raw_prefetch": {
+          "all_indices_exact": true,
+          "samples": [
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.0006417394615709782,
+              "host_staging_reuse_wait_seconds": 0.0012813475914299488,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.0096527598798275
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.0009488658979535103,
+              "host_staging_reuse_wait_seconds": 0.0010147099383175373,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.009677642025053501
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.0006181690841913223,
+              "host_staging_reuse_wait_seconds": 0.001406506635248661,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.009659265168011189
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.0005736383609473705,
+              "host_staging_reuse_wait_seconds": 0.0013534142635762691,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.009336412884294987
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.000557570718228817,
+              "host_staging_reuse_wait_seconds": 0.0008639986626803875,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.008919617626816034
+            }
+          ]
+        },
+        "compressed_serial": {
+          "all_indices_exact": true,
+          "samples": [
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 0.0030608116649091244,
+              "host_staging_reuse_wait_seconds": 8.555175736546516e-05,
+              "host_serial_consumer_wait_seconds": 0.006290108431130648,
+              "wall_seconds": 0.016164450906217098
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 0.002591255586594343,
+              "host_staging_reuse_wait_seconds": 7.644621655344963e-05,
+              "host_serial_consumer_wait_seconds": 0.006413817405700684,
+              "wall_seconds": 0.014985251240432262
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 0.0023564472794532776,
+              "host_staging_reuse_wait_seconds": 7.188599556684494e-05,
+              "host_serial_consumer_wait_seconds": 0.00646804878488183,
+              "wall_seconds": 0.014381831046193838
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 0.002349299844354391,
+              "host_staging_reuse_wait_seconds": 7.087504491209984e-05,
+              "host_serial_consumer_wait_seconds": 0.006479639559984207,
+              "wall_seconds": 0.014344713650643826
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 0.002363718580454588,
+              "host_staging_reuse_wait_seconds": 7.077725604176521e-05,
+              "host_serial_consumer_wait_seconds": 0.006483137607574463,
+              "wall_seconds": 0.01435143081471324
+            }
+          ]
+        },
+        "compressed_prefetch": {
+          "all_indices_exact": true,
+          "samples": [
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.00020710844546556473,
+              "host_staging_reuse_wait_seconds": 0.0011405372060835361,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.00844897422939539
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.00017498433589935303,
+              "host_staging_reuse_wait_seconds": 0.001157470978796482,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.008421326987445354
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.00017449306324124336,
+              "host_staging_reuse_wait_seconds": 0.0011427183635532856,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.008414873853325844
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.00017617316916584969,
+              "host_staging_reuse_wait_seconds": 0.0010854564607143402,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.008422572165727615
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.00017660623416304588,
+              "host_staging_reuse_wait_seconds": 0.0011028810404241085,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.008424974046647549
+            }
+          ]
+        }
+      },
+      "cuda_device": "NVIDIA A100-SXM4-80GB",
+      "torch_version": "2.8.0+cu128",
+      "peak_torch_allocated_bytes_including_validation": 44171776
+    },
+    "memory": {
+      "kind": "synthetic-streaming-selection-replay",
+      "config": {
+        "chunks": 16,
+        "rows": 256,
+        "k": 512,
+        "universe": 8192,
+        "seed": 17,
+        "buffers": 2,
+        "compute_size": 2048,
+        "compute_iters": 4,
+        "repeats": 5,
+        "source": "memory",
+        "device": "cuda"
+      },
+      "capacity": {
+        "raw": {
+          "payload_bytes": 4194304,
+          "manifest_bytes": 3210,
+          "codecs": {
+            "raw_u16": 16,
+            "union_bitmap": 0
+          },
+          "encode_validate_write_ms": 58.51071933284402
+        },
+        "compressed": {
+          "payload_bytes": 1526144,
+          "manifest_bytes": 3266,
+          "codecs": {
+            "raw_u16": 5,
+            "union_bitmap": 11
+          },
+          "encode_validate_write_ms": 95.69745324552059
+        }
+      },
+      "limits": [
+        "No model, selector or end-to-end prefill integration.",
+        "Disk reads may hit the OS page cache; not a cold SSD benchmark.",
+        "Selection sets are sorted; original top-k order is not preserved.",
+        "Only index buffers are bounded; this does not replace the main KV cache."
+      ],
+      "cpu_roundtrip": {
+        "raw": {
+          "wall_ms_including_validation": 80.4117089137435,
+          "all_indices_exact": true,
+          "chunks": 16
+        },
+        "compressed": {
+          "wall_ms_including_validation": 24.288886226713657,
+          "all_indices_exact": true,
+          "chunks": 16
+        }
+      },
+      "cuda": {
+        "raw_serial": {
+          "all_indices_exact": true,
+          "samples": [
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 2.696830779314041e-05,
+              "host_staging_reuse_wait_seconds": 4.3459702283144e-05,
+              "host_serial_consumer_wait_seconds": 0.007454890292137861,
+              "wall_seconds": 0.01224909396842122
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 3.1933654099702835e-05,
+              "host_staging_reuse_wait_seconds": 4.375353455543518e-05,
+              "host_serial_consumer_wait_seconds": 0.007436741143465042,
+              "wall_seconds": 0.013556804973632097
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 2.6045367121696472e-05,
+              "host_staging_reuse_wait_seconds": 4.305969923734665e-05,
+              "host_serial_consumer_wait_seconds": 0.007453209720551968,
+              "wall_seconds": 0.01224948838353157
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 2.5989487767219543e-05,
+              "host_staging_reuse_wait_seconds": 4.3200794607400894e-05,
+              "host_serial_consumer_wait_seconds": 0.007451910525560379,
+              "wall_seconds": 0.012143164873123169
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 2.593453973531723e-05,
+              "host_staging_reuse_wait_seconds": 4.295492544770241e-05,
+              "host_serial_consumer_wait_seconds": 0.007455797865986824,
+              "wall_seconds": 0.012145004235208035
+            }
+          ]
+        },
+        "raw_prefetch": {
+          "all_indices_exact": true,
+          "samples": [
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.000119808129966259,
+              "host_staging_reuse_wait_seconds": 0.002578786574304104,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.009266195818781853
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.00012364843860268593,
+              "host_staging_reuse_wait_seconds": 0.002538073342293501,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.009290657006204128
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.00013383617624640465,
+              "host_staging_reuse_wait_seconds": 0.002506779972463846,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.009293538052588701
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.00013620173558592796,
+              "host_staging_reuse_wait_seconds": 0.002499452792108059,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.009280845057219267
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.000135091133415699,
+              "host_staging_reuse_wait_seconds": 0.002571136225014925,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.009248505346477032
+            }
+          ]
+        },
+        "compressed_serial": {
+          "all_indices_exact": true,
+          "samples": [
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 3.2269395887851715e-05,
+              "host_staging_reuse_wait_seconds": 5.2941031754016876e-05,
+              "host_serial_consumer_wait_seconds": 0.00728111807256937,
+              "wall_seconds": 0.012787914369255304
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 3.201933577656746e-05,
+              "host_staging_reuse_wait_seconds": 5.336478352546692e-05,
+              "host_serial_consumer_wait_seconds": 0.007282352540642023,
+              "wall_seconds": 0.01278052106499672
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 3.068055957555771e-05,
+              "host_staging_reuse_wait_seconds": 4.974612966179848e-05,
+              "host_serial_consumer_wait_seconds": 0.007321822922676802,
+              "wall_seconds": 0.012573697604238987
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 2.7433037757873535e-05,
+              "host_staging_reuse_wait_seconds": 4.634633660316467e-05,
+              "host_serial_consumer_wait_seconds": 0.007386421784758568,
+              "wall_seconds": 0.012145459186285734
+            },
+            {
+              "chunks": 16,
+              "prefetch": false,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 262144,
+              "host_read_wait_seconds": 2.5802291929721832e-05,
+              "host_staging_reuse_wait_seconds": 4.4587068259716034e-05,
+              "host_serial_consumer_wait_seconds": 0.007430092431604862,
+              "wall_seconds": 0.011935620103031397
+            }
+          ]
+        },
+        "compressed_prefetch": {
+          "all_indices_exact": true,
+          "samples": [
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.0001156381331384182,
+              "host_staging_reuse_wait_seconds": 0.0026001320220530033,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.009224122855812311
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.00012115994468331337,
+              "host_staging_reuse_wait_seconds": 0.0026085940189659595,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.00923094293102622
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.0001265229657292366,
+              "host_staging_reuse_wait_seconds": 0.002752375788986683,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.009250055067241192
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.00013056723400950432,
+              "host_staging_reuse_wait_seconds": 0.0028550466522574425,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.00923210522159934
+            },
+            {
+              "chunks": 16,
+              "prefetch": true,
+              "buffers": 2,
+              "output_buffer_bytes": 1048576,
+              "device_input_buffer_bytes": 524288,
+              "pinned_buffer_bytes": 524288,
+              "cpu_read_ahead_payload_upper_bound_bytes": 524288,
+              "host_read_wait_seconds": 0.00013021007180213928,
+              "host_staging_reuse_wait_seconds": 0.002847804222255945,
+              "host_serial_consumer_wait_seconds": 0.0,
+              "wall_seconds": 0.009221184067428112
+            }
+          ]
+        }
+      },
+      "cuda_device": "NVIDIA A100-SXM4-80GB",
+      "torch_version": "2.8.0+cu128",
+      "peak_torch_allocated_bytes_including_validation": 44171776
+    }
+  }
+}
