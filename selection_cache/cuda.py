@@ -14,6 +14,8 @@ import torch
 import triton
 import triton.language as tl
 
+from .policy import SplitPlan
+
 
 @triton.jit
 def _raw_decode(source, output, N: tl.constexpr, K: tl.constexpr,
@@ -71,6 +73,8 @@ class CudaReplay:
     ``prefetch=False`` uses identical buffers/kernels but waits for each
     consumer before reading/preparing the next chunk. ``True`` overlaps a
     bounded CPU read-ahead queue and preparation with previous GPU consumers.
+    ``run_hybrid`` additionally recomputes an uncached head while preparing a
+    retained tail. Its store contains only tail packets, never dummy head rows.
     No model integration, eviction policy, or automatic prefix matching is
     provided: the store must already have passed its identity validation.
     Only use stores produced by the validated writer: GPU decoding does not
@@ -100,9 +104,9 @@ class CudaReplay:
             self._validate_entry(entry)
         self.buffers = buffers
         self.prefetch = bool(prefetch)
-        self.max_rows = max((e["rows"] for e in self.entries), default=1)
-        self.max_k = max((e["k"] for e in self.entries), default=1)
-        self.max_payload = max((e["nbytes"] for e in self.entries), default=1)
+        self.max_rows = max((e["rows"] for e in self.entries), default=0)
+        self.max_k = max((e["k"] for e in self.entries), default=0)
+        self.max_payload = max((e["nbytes"] for e in self.entries), default=0)
         self.output_bytes = buffers * self.max_rows * self.max_k * 4
         self.input_bytes = buffers * self.max_payload
         # Count both the pinned staging and device input, plus expanded output.
@@ -115,7 +119,7 @@ class CudaReplay:
         self._slots = []
         with torch.cuda.device(self.device):
             self._prepare = torch.cuda.Stream(device=self.device)
-            for _ in range(buffers):
+            for _ in range(buffers if self.entries else 0):
                 host = torch.empty(self.max_payload, dtype=torch.uint8,
                                    pin_memory=True)
                 self._slots.append(_Slot(
@@ -125,7 +129,7 @@ class CudaReplay:
                     torch.empty((self.max_rows, self.max_k), dtype=torch.int32,
                                 device=self.device),
                     torch.cuda.Event(), torch.cuda.Event(), torch.cuda.Event()))
-        if self.prefetch:
+        if self.prefetch and self.entries:
             self._executor = ThreadPoolExecutor(max_workers=1,
                                                 thread_name_prefix="selection-read")
 
@@ -194,13 +198,43 @@ class CudaReplay:
         Host future/event wait times are diagnostic and are NOT GPU stall time.
         Only this replay's preparation and calling compute streams are synced.
         """
+        return self.run_hybrid(consume, None, SplitPlan(len(self.entries), 0))
+
+    def run_hybrid(self, consume, recompute, plan):
+        """Recompute a head and replay an independently encoded cached tail.
+
+        ``recompute(global_ordinal)`` must enqueue selector work on the caller's
+        current stream and return a nonempty 2-D int32 CUDA tensor. ``consume``
+        receives this result, then subsequent tail tensors, in global order.
+        Both callbacks obey the same stream and borrowed-lifetime contract as
+        ``run``. The store must contain exactly ``plan.cached_chunks`` packets,
+        and its identity must already bind this split and the execution layout.
+
+        With prefetch enabled, tail reads start before the head. After each
+        head callback is enqueued, completed reads are staged without waiting
+        for outstanding I/O. Decode may then overlap queued head GPU work.
+        A slow read never prevents the first head callback from being issued.
+        This is a static split, not a late-arrival switching/eviction policy.
+        """
+        if not isinstance(plan, SplitPlan):
+            raise ValueError("plan must be a SplitPlan")
+        if len(self.entries) != plan.cached_chunks:
+            raise ValueError("store must contain only the plan's cached tail")
+        if not callable(consume) or (plan.recompute_chunks and not callable(recompute)):
+            raise ValueError("consume and required recompute callbacks must be callable")
         if self._closed:
             raise RuntimeError("CudaReplay is closed")
         if self._running:
             raise RuntimeError("CudaReplay.run is not reentrant")
         self._running = True
         futures = {}
-        stats = {"chunks": len(self.entries), "prefetch": self.prefetch,
+        staged = {}
+        stats = {"chunks": plan.total_chunks, "prefetch": self.prefetch,
+                 "head_chunks": plan.recompute_chunks,
+                 "tail_chunks": plan.cached_chunks,
+                 "tail_payload_bytes": sum(e["nbytes"] for e in self.entries),
+                 "tail_chunks_staged_during_head": 0,
+                 "split_policy": "static_chunk_boundary",
                  "buffers": self.buffers, "output_buffer_bytes": self.output_bytes,
                  "device_input_buffer_bytes": self.input_bytes,
                  "pinned_buffer_bytes": self.input_bytes,
@@ -218,25 +252,63 @@ class CudaReplay:
                 if self.prefetch:
                     for index in range(min(self.buffers, len(self.entries))):
                         futures[index] = self._executor.submit(self.store.read, index)
+                # Tail preparation is independent of future Q/K once the
+                # cache identity has been validated. Enqueue useful head work
+                # before inspecting futures so disk latency cannot stall it.
+                next_initial_stage = 0
+                for ordinal in range(plan.recompute_chunks):
+                    with torch.cuda.stream(self._compute):
+                        indices = recompute(ordinal)
+                        if (not isinstance(indices, torch.Tensor)
+                                or indices.dtype != torch.int32
+                                or indices.device != self.device
+                                or indices.ndim != 2
+                                or not indices.shape[0] or not indices.shape[1]):
+                            raise ValueError("recompute must return a nonempty 2-D int32 tensor on the replay device")
+                        # A caller may return a tensor allocated on another
+                        # stream after establishing its readiness dependency.
+                        indices.record_stream(self._compute)
+                        consume(indices, ordinal)
+                    del indices
+                    if self.prefetch:
+                        while next_initial_stage < min(self.buffers, len(self.entries)):
+                            index = next_initial_stage
+                            if not futures[index].done():
+                                break
+                            chunk = futures.pop(index).result()
+                            staged[index] = self._stage(index, chunk, stats)
+                            del chunk
+                            next_initial_stage += 1
+                            stats["tail_chunks_staged_during_head"] += 1
+                if not self.prefetch and plan.recompute_chunks and self.entries:
+                    # Serial baseline: do not overlap tail preparation with
+                    # head consumers, while keeping the same decode kernels.
+                    started = time.perf_counter()
+                    self._compute.synchronize()
+                    stats["host_serial_consumer_wait_seconds"] += time.perf_counter() - started
                 for index, entry in enumerate(self.entries):
                     if not self.prefetch and index:
                         started = time.perf_counter()
                         self._slots[(index - 1) % self.buffers].consumed.synchronize()
                         stats["host_serial_consumer_wait_seconds"] += time.perf_counter() - started
-                    started = time.perf_counter()
-                    if self.prefetch:
-                        chunk = futures.pop(index).result()
+                    if index in staged:
+                        slot = staged.pop(index)
                     else:
-                        chunk = self.store.read(index)
-                    stats["host_read_wait_seconds"] += time.perf_counter() - started
-                    slot = self._stage(index, chunk, stats)
-                    del chunk
+                        started = time.perf_counter()
+                        if self.prefetch:
+                            chunk = futures.pop(index).result()
+                        else:
+                            chunk = self.store.read(index)
+                        stats["host_read_wait_seconds"] += time.perf_counter() - started
+                        slot = self._stage(index, chunk, stats)
+                        del chunk
                     if self.prefetch and index + self.buffers < len(self.entries):
                         following = index + self.buffers
                         futures[following] = self._executor.submit(self.store.read, following)
                     self._compute.wait_event(slot.ready)
                     with torch.cuda.stream(self._compute):
-                        consume(slot.output[:entry["rows"], :entry["k"]], index)
+                        consume(slot.output[:entry["rows"], :entry["k"]],
+                                plan.cache_global_ordinal(index))
                         slot.consumed.record(self._compute)
                     slot.has_consumer = True
                 self._compute.synchronize()

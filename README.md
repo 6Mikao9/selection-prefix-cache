@@ -11,6 +11,7 @@
 - 既可从磁盘文件逐块读，也可将压缩包留在 DRAM。
 - CUDA 路径预分配有限的 pinned 输入、GPU 压缩输入和 int32 输出缓冲。独立 stream 提前搬运、解码；消费者用完后复用缓冲。
 - 单个后台读取线程和有限预取窗口避免全量载入。事件约束数据就绪与缓冲复用，保留串行对照路径。
+- 支持前段重算、仅后段缓存：静态切点对齐 chunk，前段调用真实重算回调，同时准备后段；缓存文件不保存前段选集。
 
 流程为：`SSD/DRAM 压缩记录 → 有界 pinned staging → GPU 提前解码 → 当前 stream 消费 → 缓冲复用`。
 
@@ -83,6 +84,38 @@ with CudaReplay(store, buffers=2, prefetch=True) as replay:
 调用方负责生成正确的身份指纹；这些字符串不是自动验证模型语义的机制。完整前缀、权重/adapter、位置/RoPE、mask、selector 算法或数值路径变化时，应使对应缓存失效。新 suffix 仍需要自己的 selector 计算。
 
 `run()` 返回整个调用的 wall time、主机读取/缓冲复用等待，以及各类缓冲字节数。首轮调用可能包含 JIT 编译，做性能比较前需要预热。主机等待统计不是 GPU stall 时间，不能直接相加为端到端收益。
+
+## 前段重算、后段缓存
+
+`SplitPlan` 指定总 chunk 数及前段重算数，`from_fraction()` 向下取整到 chunk 边界。持久化时只写后段包，不能仅把前段留在文件里再跳过读取。缓存身份应包含切点、chunk 布局及模型/前缀指纹。
+
+```python
+from selection_cache import SplitPlan
+
+plan = SplitPlan(total_chunks=16, recompute_chunks=4)
+# tail_store 只含原始 chunk 4..15 的十二个包，按实际消费顺序排列。
+# recompute(global_ordinal) 在当前 CUDA stream 执行 selector，返回 int32 索引。
+# consume(indices, global_ordinal) 对重算和重放结果执行相同的下游计算。
+with CudaReplay(tail_store, buffers=2, prefetch=True) as replay:
+    stats = replay.run_hybrid(consume, recompute, plan)
+```
+
+后段读取在前段开始前提交；前段工作入队后，主机非阻塞检查已读好的后段包并提前解码。消费者顺序仍为 0..N-1，事件保护缓冲复用。全重算允许空 store，选择输入/输出缓冲为零；全缓存与原 `run()` 兼容。当前是固定切点，不包含预测到达时间、动态取消或自动选择最优 H。多层接入必须由调用方明确层与 query 区间，不能把层优先排列中的前几个 chunk 自动当作所有层的前段 token。
+
+复现实验：
+
+```bash
+# 默认切点 0、1/16、1/8、1/4、1/2、1；同时比较 DRAM 和已预热文件。
+CUDA_VISIBLE_DEVICES=0 python split_demo.py \
+  --directory split-cache-small --output results-split-small.json
+
+# 更大的候选集合，仍是合成 selector 微基准。
+CUDA_VISIBLE_DEVICES=0 python split_demo.py \
+  --directory split-cache-long --output results-split-long.json \
+  --chunks 16 --rows 128 --k 512 --universe 65536 --head-dim 128 --repeats 7
+```
+
+这里真正运行 BF16 QK、top-k 和规范排序；没有用 sleep 模拟重算。候选数逐 chunk 增长，同一 chunk 内各行共享候选范围，不是原生 QSA 的逐行因果计算。各模式预热后按固定种子的随机顺序交错采样；计时包含前段 selector、后段准备、所有消费和首尾开销。只在验证阶段保留全量参考索引，缓存产物本身只保存尾段。详见 [切分结果](benchmarks/split_results.md)。
 
 ## 格式与显存
 
